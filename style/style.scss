@@ -1,0 +1,59 @@
+* {
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	border-radius: 0.2em;
+}
+body {
+	margin: 0;
+	text-align: center;
+}
+div {
+	padding: 0.2em;
+}
+.selected {
+	background-color: #e07373;
+}
+.title {
+	left: 0;
+	top: 0;
+	margin: auto;
+	> h1 {
+		text-align: center;
+	}
+}
+.container {
+	font-family: monospace;
+	width: 100%;
+	font-size: 1.3em;
+	a {
+		color: black;
+		text-decoration: none;
+		padding: 0.3em;
+		background-color: #f0f0f0;
+	}
+	.switch {
+		> span {
+			padding: 0.3em;
+		}
+	}
+	.field {
+		input,
+		textarea {
+			font-size: 1em;
+			font-family: monospace;
+			resize: none;
+			border: none;
+			width: 50%;
+			margin: 0.2rem 0;
+			padding: 0.5rem;
+			&:focus {
+				outline: none;
+				background-color: #f0f0f0;
+			}
+		}
+		textarea {
+			height: 15em;
+		}
+	}
+}
